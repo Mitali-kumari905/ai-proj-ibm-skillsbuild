@@ -1,0 +1,12 @@
+[theme]
+# Main page background 
+backgroundColor = "#000000"
+
+# Main page text color
+textColor = "#FFFFFF"
+
+# Sidebar background
+sidebarBackgroundColor = "#111111"
+
+# Primary accent color (for sliders, buttons, widget borders)
+primaryColor = "#39FF14"
