@@ -2,12 +2,20 @@ import os
 import streamlit as st
 import google.generativeai as genai
 
+# =====================================================================
+# 🔑 LOCAL RUN CONFIGURATION
+# If running locally, paste your Gemini API Key between the quotes below.
+# Example: GOOGLE_API_KEY = "AIzaSy..."
+# =====================================================================
+#GOOGLE_API_KEY = "PASTE_YOUR_GEMINI_API_KEY_HERE" or os.getenv("GOOGLE_API_KEY")
+
 #Configure Gemini
-GOOGLE_API_KEY=os.getenv("GOOGLE_API_KEY")
+GOOGLE_API_KEY=os.getenv("GOOGLE_API_KEY") #remove this for running locally
 if GOOGLE_API_KEY:
     genai.configure(api_key=GOOGLE_API_KEY)
 else:
     st.error("API key not found.")
+    st.stop()  # Prevents crash on subsequent code execution
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 
