@@ -34,3 +34,7 @@ To test this application locally, you can easily inject your own Google Gemini A
 ```bash
 git clone <YOUR_GITHUB_REPOSITORY_URL>
 cd <YOUR_REPOSITORY_NAME>
+
+## Live Demo
+
+🔗 [View Live Project](https://ai-proj-ibm-skillsbuild.onrender.com/)
